@@ -1,0 +1,15 @@
+{% extends 'events/base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated and not user.is_superuser %}
+    <h3>Bienvenid@ {{ user }}!</h3>
+{% else %}
+    <a href="{% url 'social:begin' 'eventbrite' %}?next={% url 'events:home' %}" class="btn btn-primary">
+        Identificarse con Eventbrite
+    </a>
+
+    <a href="{% url 'social:begin' 'github' %}" class="btn btn-primary">Login with Github</a>
+{% endif %}
+
+{% endblock %}
