@@ -9,7 +9,7 @@
         Identificarse con Eventbrite
     </a>
 
-    <a href="{% url 'social:begin' 'github' %}" class="btn btn-primary">Login with Github</a>
+    <a href="{% url 'social:begin' 'github' %}?next={% url 'events:home' %}" class="btn btn-primary">Login with Github</a>
 {% endif %}
 
 {% endblock %}
