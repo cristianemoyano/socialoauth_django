@@ -5,7 +5,7 @@
 {% if user.is_authenticated and not user.is_superuser %}
     <h3>Bienvenid@ {{ user }}!</h3>
 {% else %}
-    <a href="{% url 'social:begin' 'eventbrite-oauth2' %}?next={% url 'events:home' %}" class="btn btn-primary">
+    <a href="{% url 'social:begin' 'eventbrite' %}?next={% url 'events:home' %}" class="btn btn-primary">
         Identificarse con Eventbrite
     </a>
 
