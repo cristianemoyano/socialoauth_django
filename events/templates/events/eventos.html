@@ -4,14 +4,21 @@
 
 {% block content %}
 
-{% if eventos %}
+{% if events %}
     <ul>
-    {% for evento in eventos %}
-        <li><a href="{% url 'events:go' evento.pk %}">{{ evento }}</a></li>
+    {% for event in events %}
+
+    <li>Event name:   <b>{{ event.name.html }}   </b> |
+        Event start:  <b>{{ event.start.local }} </b> |
+        Event end:    <b>{{ event.end.local }}   </b> |
+        Event status: <b>{{ event.status }}.     </b>
+    </li>
+
     {% endfor %}
     </ul>
+
 {% else %}
-    <p>No existen eventos almacenados.</p>
+    <p>No tienes ningún evento.</p>
 {% endif %}
 
 {% endblock %}
