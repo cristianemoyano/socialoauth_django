@@ -29,12 +29,12 @@ Install dependencies
 ```shell
 $ make install
 ```
-Set enviorement
+Set enviorement: replace key & secret with your credentials
 ```shell
-$ export YOUR_PROVIDER_KEY='SECRET'
+$ export SOCIAL_AUTH_EVENTBRITE_KEY=KEY
 ```
 ```shell
-$ export YOUR_PROVIDER_PASSWORD='SECRET'
+$ export SOCIAL_AUTH_EVENTBRITE_SECRET=SECRET
 ```
 Run application
 ```shell
