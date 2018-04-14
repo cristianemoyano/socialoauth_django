@@ -1,9 +1,11 @@
 certifi==2018.1.18
 chardet==3.0.4
+coverage==4.5.1
 dj-database-url==0.5.0
 Django==1.11.11
 django-auditlog==0.4.5
 django-jsonfield==1.0.1
+eventbrite==3.3.3
 gunicorn==19.7.1
 idna==2.6
 oauthlib==2.0.6
