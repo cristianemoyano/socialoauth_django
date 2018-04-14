@@ -69,7 +69,7 @@ Run test
 ```shell
 $ make test
 ```
-Run cooverage
+Run coverage
 ```shell
 $ make coverage
 ```
