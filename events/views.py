@@ -1,4 +1,8 @@
-# -*- coding: utf-8 -*-
+"""
+INTEGRATE EVENTBRITE OAUTH LOGIN IN OUR DJANGO PROJECT
+by Cristian Moyano
+
+"""
 from __future__ import unicode_literals
 
 from django.shortcuts import render
@@ -10,7 +14,6 @@ def home(request):
 
 
 def all(request):
-    # events = Evento.objects.all()
     access_token = request.user.social_auth.get(
         provider=request.session.get('social_auth_last_login_backend')
     ).access_token
