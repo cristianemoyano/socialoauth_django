@@ -1,5 +1,7 @@
 # INTEGRATE EVENTBRITE OAUTH LOGIN IN OUR DJANGO PROJECT
 
+[![Build Status](https://travis-ci.org/cristianemoyano/socialoauth_django.svg?branch=master)](https://travis-ci.org/cristianemoyano/socialoauth_django)
+
 ## Description
 
 This is a project based on Django, which implements the necessary functionality to integrate social-auth-core using the outh provider of Eventbrite.
