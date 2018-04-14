@@ -25,17 +25,28 @@ Clone repository
 ```shell
 $ git clone https://github.com/cristianemoyano/socialoauth_django.git
 ```
+
 Install dependencies
 ```shell
 $ make install
 ```
-Set enviorement: replace key & secret with your credentials
+
+Set environment: replace key & secret with your credentials
 ```shell
 $ export SOCIAL_AUTH_EVENTBRITE_KEY=KEY
 ```
 ```shell
 $ export SOCIAL_AUTH_EVENTBRITE_SECRET=SECRET
 ```
+```shell
+$ export SECRET_KEY=SECRET
+```
+
+SECURITY WARNING: don't run with debug turned on in production!
+```shell
+$ export DEBUG=False
+```
+
 Run application
 ```shell
 $ make run
