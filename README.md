@@ -14,11 +14,9 @@ The social-auth documentation is available at http://python-social-auth.readthed
 The eventbrite api documentation is available at https://www.eventbrite.com/developer/v3/.
 The eventbrite backend documentation is available at http://python-social-auth.readthedocs.io/en/latest/backends/eventbrite.html
 
-
 ## Backend supported
 
 [Backend supported list](http://python-social-auth.readthedocs.io/en/latest/backends/index.html).
-
 
 ## Setup
 Clone repository
