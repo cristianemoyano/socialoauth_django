@@ -1,0 +1,17 @@
+language: python
+python:
+  - "2.7"
+
+env:
+  global:
+  - DJANGO_SETTINGS_MODULE="socialauth.settings"
+  - PYTHONPATH="/home/travis/build/cristianemoyano/socialoauth_django"
+  - PIP_USE_MIRRORS=true
+
+install:
+  - pip install -r requirements.txt
+
+script: coverage run manage.py test
+
+after_success:
+  - coveralls
