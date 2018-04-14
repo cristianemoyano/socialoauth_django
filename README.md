@@ -19,9 +19,24 @@ in a Django based project.
 The documentation is available at http://python-social-auth.readthedocs.org/.
 
 ## Setup
-
+Clone repository
 ```shell
-$ pip install social-auth-app-django
+$ git clone https://github.com/cristianemoyano/socialoauth_django.git
+```
+Install libs
+```shell
+$ make install
+```
+Set enviorement
+```shell
+$ export YOUR_PROVIDER_KEY='SECRET'
+```
+```shell
+$ export YOUR_PROVIDER_PASSWORD='SECRET'
+```
+Run application
+```shell
+$ make run
 ```
 
 ## Makefile
@@ -55,14 +70,6 @@ $ make install
 ```
 ```shell
 $ make freeze
-```
-
-## Set Enviorement
-```shell
-$ export YOUR_PROVIDER_KEY='SECRET'
-```
-```shell
-$ export YOUR_PROVIDER_PASSWORD='SECRET'
 ```
 
 
