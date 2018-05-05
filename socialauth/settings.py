@@ -10,6 +10,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ALLOWED_HOSTS = ['localhost', '0.0.0.0', '127.0.0.1', '.herokuapp.com']
 
+
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -65,18 +67,16 @@ SOCIAL_AUTH_LOGIN_REDIRECT_URL = ['/events/all/']
 
 # Environment variable
 
+# SECRET KEY DJANGO
 SECRET_KEY = os.environ['SECRET_KEY']
+
+# EVENTBRITE
+SOCIAL_AUTH_EVENTBRITE_KEY = os.environ['SOCIAL_AUTH_EVENTBRITE_KEY']
+SOCIAL_AUTH_EVENTBRITE_SECRET = os.environ['SOCIAL_AUTH_EVENTBRITE_SECRET']
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ['DEBUG']
-
-# EVENTBRITE
-EVENTBRITE_KEY = os.environ['SOCIAL_AUTH_EVENTBRITE_KEY']
-EVENTBRITE_SECRET = os.environ['SOCIAL_AUTH_EVENTBRITE_SECRET']
-
-# local
-SOCIAL_AUTH_EVENTBRITE_KEY = EVENTBRITE_KEY
-SOCIAL_AUTH_EVENTBRITE_SECRET = EVENTBRITE_SECRET
 
 
 ROOT_URLCONF = 'socialauth.urls'
@@ -141,7 +141,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-LANGUAGE_CODE = 'es'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'America/Argentina/Mendoza'
 
